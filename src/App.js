@@ -2,6 +2,7 @@ import { React, useState } from "react";
 import "./App.css";
 import Header from "./components/Header";
 import Task from "./components/TasksList";
+import AddTask from "./components/AddTask";
 
 function App() {
   const [tasks, setTasks] = useState([
@@ -37,6 +38,14 @@ function App() {
     },
   ]);
 
+  //add task
+  const addTaskApp = (task) => {
+    console.log(task);
+    const id = Math.floor(Math.random() * 10000) + 1;
+    const newTask = { id, ...task };
+    setTasks([...tasks, newTask]);
+  };
+
   //Delete Task
   const deleteTaskApp = (id) => {
     console.log("delete", id);
@@ -44,7 +53,7 @@ function App() {
   };
 
   //Toggle reminder
-  const toggleReminder = (id) => {
+  const toggleReminderApp = (id) => {
     console.log(id);
     setTasks(
       tasks.map((task) =>
@@ -56,11 +65,12 @@ function App() {
   return (
     <div className="container">
       <Header />
+      <AddTask onAdd={addTaskApp} />
       {tasks.length > 0 ? (
         <Task
           tasks={tasks}
           onDelete={deleteTaskApp}
-          onToggle={toggleReminder}
+          onToggle={toggleReminderApp}
         />
       ) : (
         "No Task to display"
