@@ -10,7 +10,9 @@ import Footer from "./components/Footer";
 function App() {
   const [showAddForm, setShowAddForm] = useState(false);
   const [tasks, setTasks] = useState([]);
-  const apiUrl = "http://localhost:5000/tasks";
+  const apiUrl =
+    "https://my-json-server.typicode.com/aaqadir/json-server/tasks";
+  // const apiUrl = "http://localhost:5000/tasks";
 
   useEffect(() => {
     const getAllTasks = async () => {
