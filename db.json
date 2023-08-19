@@ -16,13 +16,19 @@
       "id": 3,
       "text": "Meeting at office",
       "day": "Feb 6th at 1:30pm",
-      "reminder": true
+      "reminder": false
     },
     {
-      "id": 5,
-      "text": "Meeting at busstop",
-      "day": "Feb 6th at 1:30pm",
-      "reminder": false
+      "text": "Meet @zoom",
+      "day": "Fri 3pm",
+      "reminder": true,
+      "id": 4
+    },
+    {
+      "text": "College FDAY",
+      "day": "Mon",
+      "reminder": false,
+      "id": 5
     }
   ]
 }

@@ -9,6 +9,7 @@
 body {
   font-family: "Poppins", sans-serif;
 }
+
 .container {
   max-width: 500px;
   margin: 30px auto;
@@ -70,7 +71,7 @@ body {
   justify-content: space-between;
 }
 
-.add form {
+.add-form {
   margin-bottom: 40px;
 }
 
@@ -105,7 +106,7 @@ body {
   height: 20px;
 }
 
-.footer {
+footer {
   margin-top: 30px;
   text-align: center;
 }
