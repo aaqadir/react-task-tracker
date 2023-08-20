@@ -1,5 +1,5 @@
 import { React, useState, useEffect } from "react";
-import { useParams, useNavigate } from "react-router-dom";
+import { useParams, useNavigate, Link } from "react-router-dom";
 import Button from "./Button";
 
 function TaskDetails() {
@@ -29,12 +29,13 @@ function TaskDetails() {
     <div>
       <h3>{task.text}</h3>
       <p>{task.day}</p>
-      <Button
+      <Link to="/react-task-tracker">Go Back</Link>
+      {/* <Button
         text="Go Back"
         onClickHeader={() => {
           navigate(-1);
         }}
-      ></Button>
+      ></Button> */}
     </div>
   );
 }
