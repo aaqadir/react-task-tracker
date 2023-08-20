@@ -6,6 +6,7 @@ import Task from "./components/TasksList";
 import AddTask from "./components/AddTask";
 import About from "./components/About";
 import Footer from "./components/Footer";
+import TaskDetails from "./components/TaskDetails";
 
 function App() {
   const [showAddForm, setShowAddForm] = useState(false);
@@ -121,7 +122,9 @@ function App() {
             }
           ></Route>
 
-          <Route path="/about" element={<About></About>}></Route>
+          <Route path="/about" element={<About />}></Route>
+
+          <Route path="/task/:id" element={<TaskDetails />}></Route>
         </Routes>
 
         <Footer></Footer>
