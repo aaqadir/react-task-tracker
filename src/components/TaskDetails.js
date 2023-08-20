@@ -29,7 +29,7 @@ function TaskDetails() {
     <div>
       <h3>{task.text}</h3>
       <p>{task.day}</p>
-      <Link to="/react-task-tracker">Go Back</Link>
+      <Link to="/react-task-tracker/">Go Back</Link>
       {/* <Button
         text="Go Back"
         onClickHeader={() => {
